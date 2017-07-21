@@ -42,7 +42,7 @@ public final class SunshinePreferences {
      * @param lon      the longitude of the city
      */
     public static void setLocationDetails(Context context, double lat, double lon) {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences sp =  PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sp.edit();
 
         editor.putLong(PREF_COORD_LAT, Double.doubleToRawLongBits(lat));
